@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "xkcd"
+version = "0.1.0"
+description = "Following our earlier conversation, the requirement is for an endpoint that returns only the latest XKCD comic. Implementing this feature involves using the tech stack specified: Python as the programming language, FastAPI for the API framework, PostgreSQL for the database, and Prisma as the ORM. The endpoint can be designed to fetch the latest comic's information from the XKCD API endpoint (`https://xkcd.com/info.0.json`), parse its content, and then serve it to the user in a JSON format structured according to the project's data models. This endpoint will be a valuable addition for users looking to get quick and updated access to the latest XKCD comics."
+authors = ["AutoGPT <info@agpt.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+fastapi = "*"
+httpx = "*"
+prisma = "*"
+pydantic = "*"
+uvicorn = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
